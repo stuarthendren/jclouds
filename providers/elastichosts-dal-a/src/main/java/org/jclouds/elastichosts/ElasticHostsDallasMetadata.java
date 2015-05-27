@@ -28,7 +28,7 @@ import org.jclouds.providers.internal.BaseProviderMetadata;
 import com.google.auto.service.AutoService;
 
 /**
- * Implementation of {@link ProviderMetadata} for ElasticHosts Amsterdam.
+ * Implementation of {@link ProviderMetadata} for ElasticHosts Dallas.
  */
 @AutoService(ProviderMetadata.class)
 public class ElasticHostsDallasMetadata extends BaseProviderMetadata {

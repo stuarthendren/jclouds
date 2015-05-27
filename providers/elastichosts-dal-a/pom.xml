@@ -32,12 +32,12 @@
   <packaging>bundle</packaging>
 
   <properties>
-    <test.elastichosts-ams-e.endpoint>https://api-dal-a.elastichosts.com</test.elastichosts-ams-e.endpoint>
-    <test.elastichosts-ams-e.api-version>2.0</test.elastichosts-ams-e.api-version>
-    <test.elastichosts-ams-e.build-version />
-    <test.elastichosts-ams-e.identity>FIXME_IDENTITY</test.elastichosts-ams-e.identity>
-    <test.elastichosts-ams-e.credential>FIXME_CREDENTIAL</test.elastichosts-ams-e.credential>
-    <test.elastichosts-ams-e.template />
+    <test.elastichosts-dal-a.endpoint>https://api-dal-a.elastichosts.com</test.elastichosts-dal-a.endpoint>
+    <test.elastichosts-dal-a.api-version>2.0</test.elastichosts-dal-a.api-version>
+    <test.elastichosts-dal-a.build-version />
+    <test.elastichosts-dal-a.identity>FIXME_IDENTITY</test.elastichosts-dal-a.identity>
+    <test.elastichosts-dal-a.credential>FIXME_CREDENTIAL</test.elastichosts-dal-a.credential>
+    <test.elastichosts-dal-a.template />
 
     <jclouds.osgi.export>org.jclouds.elastichosts*;version="${project.version}"</jclouds.osgi.export>
     <jclouds.osgi.import>
