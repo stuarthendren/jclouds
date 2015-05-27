@@ -40,7 +40,7 @@ public class ElasticHostsMiamiTemplateBuilderLiveTest extends BaseTemplateBuilde
    @Override
    public void testDefaultTemplateBuilder() throws IOException {
       Template defaultTemplate = view.getComputeService().templateBuilder().build();
-      assertTrue(defaultTemplate.getImage().getOperatingSystem().getVersion().matches("1[01234].[01][04].[0-9]*"));
+      assertTrue(defaultTemplate.getImage().getOperatingSystem().getVersion().matches("1[01234].[01][04].?[0-9]?"));
       assertEquals(defaultTemplate.getImage().getOperatingSystem().is64Bit(), true);
       assertEquals(defaultTemplate.getImage().getOperatingSystem().getFamily(), OsFamily.UBUNTU);
       assertEquals(getCores(defaultTemplate.getHardware()), 1.0d);
