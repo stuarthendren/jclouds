@@ -232,6 +232,7 @@
     <auto-service.version>1.0-rc2</auto-service.version>
     <auto-value.version>1.1</auto-value.version>
     <java-xmlbuilder.version>1.1</java-xmlbuilder.version>
+    <sshj.version>0.12.0</sshj.version>
     <http.proxyHost />
     <http.proxyPort />
     <jclouds.wire.httpstream.url>http://archive.apache.org/dist/commons/logging/binaries/commons-logging-1.1.1-bin.tar.gz</jclouds.wire.httpstream.url>
@@ -360,6 +361,18 @@
         <groupId>com.jamesmurty.utils</groupId>
         <artifactId>java-xmlbuilder</artifactId>
         <version>${java-xmlbuilder.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.hierynomus</groupId>
+        <artifactId>sshj</artifactId>
+        <version>${sshj.version}</version>
+        <exclusions>
+        <!-- provided by the jclouds-bouncycastle driver -->
+        <exclusion>
+          <groupId>org.bouncycastle</groupId>
+          <artifactId>bcprov-jdk15on</artifactId>
+        </exclusion>
+      </exclusions>
       </dependency>
     </dependencies>
   </dependencyManagement>
@@ -577,12 +590,12 @@
                 <dependency>
                   <groupId>com.jcraft</groupId>
                   <artifactId>jsch.agentproxy.core</artifactId>
-                  <version>0.0.8</version>
+                  <version>0.0.9</version>
                 </dependency>
                 <dependency>
                   <groupId>com.jcraft</groupId>
                   <artifactId>jsch.agentproxy.connector-factory</artifactId>
-                  <version>0.0.8</version>
+                  <version>0.0.9</version>
                 </dependency>
               </conflictingDependencies>
               <packages>
